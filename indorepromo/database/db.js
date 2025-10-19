@@ -1,17 +1,15 @@
 const database = {
   site: {
-    title: "Henry Joseph | Fitness Trainer",
-    description: "Get in shape and stay healthy with Henry Joseph – your certified fitness trainer."
+    title: "Indore Promo",
+    description: "Instagram Influencer in indore"
   },
 
   profile: {
-    name: "Henry Joseph",
-    title: "Certified Fitness Trainer",
+    name: "Manisha Raikwar",
+    title: "Instagram Content Creator",
     about: {
-      title: "Make Your Body Healthy & Fit",
-      image: "assets/images/main-img/about-us-img.png",
-      text1: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-      text2: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
+      profileimage: "img/profile_pic.jpg",
+      coverimage: "img/cover.png",
     }
   },
 
