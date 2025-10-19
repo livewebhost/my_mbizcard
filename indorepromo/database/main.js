@@ -7,3 +7,4 @@
   document.getElementById("about-us-short").textContent = database.profile.about.aboutusshort;
   document.getElementById("profile-image").src = database.profile.about.profileimage;
   document.getElementById("cover-image").src = database.profile.about.coverimage;
+  document.getElementById("my-qr-code-url").src = database.site.qrurl;

@@ -1,7 +1,8 @@
 const database = {
   site: {
     title: "Indore Promo",
-    description: "Instagram Influencer in indore"
+    description: "Instagram Influencer in indore",
+    qrurl: "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+ encodeURIComponent(window.location.href),
   },
 
   profile: {
