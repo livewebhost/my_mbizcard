@@ -709,6 +709,10 @@
 	  document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
 	    link.href = link.href + '?v=' + Date.now();
 	  });
+
+	  document.querySelectorAll('script[src]').forEach(script => {
+	    script.src = script.src + '?v=' + Date.now();
+	  });
 	</script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="database/db.js"></script>
