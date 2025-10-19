@@ -705,15 +705,6 @@
 		</div>
 		<!--  Share modal end -->
 	</div>
-	<script>
-	  document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
-	    link.href = link.href + '?v=' + Date.now();
-	  });
-
-	  document.querySelectorAll('script[src]').forEach(script => {
-	    script.src = script.src + '?v=' + Date.now();
-	  });
-	</script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="database/db.js"></script>
 	<script src="database/main.js"></script>
@@ -721,5 +712,20 @@
 	<script src="assets/js/bootstrap.bundle.min.js"></script>
 	<script src="assets/js/cursor.js"></script>
 	<script src="assets/js/custom.js"></script>
+	<script>
+	  document.addEventListener("DOMContentLoaded", () => {
+	    // CSS files
+	    document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
+	      link.href = link.href + '?v=' + Date.now();
+	    });
+
+	    // JS files
+	    document.querySelectorAll('script[src]').forEach(script => {
+	      if (script.innerHTML.includes('Date.now')) return;
+
+	      script.src = script.src + '?v=' + Date.now();
+	    });
+	  });
+	</script>
 </body>
 </html>
