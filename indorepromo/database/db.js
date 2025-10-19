@@ -11,7 +11,8 @@ const database = {
     about: {
       profileimage: "img/profile_pic.jpg",
       coverimage: "img/cover.png",
-      aboutusshort: "मैं एक creative video editor और digital content creator हूँ, जो business promotions के लिए engaging Instagram reels बनाती हूँ। चाहे आपका brand नया हो या established — मैं आपके products और services को short, impactful reels के ज़रिए audience तक पहुँचाने में मदद करती हूँ। हर reel को unique concept और smart editing से बनाया जाता है ताकि आपका business online grow करे और लोगों का ध्यान खींचे। अगर आप भी अपने business, brand या service के लिए reel बनवाना चाहते हैं — तो आज ही contact करें!",
+      aboutusshort: "I’m a content creator who makes engaging Instagram reels for business promotions, products, and services.",
+      aboutuslong: "मैं एक creative video editor और digital content creator हूँ, जो business promotions के लिए engaging Instagram reels बनाती हूँ। चाहे आपका brand नया हो या established — मैं आपके products और services को short, impactful reels के ज़रिए audience तक पहुँचाने में मदद करती हूँ। हर reel को unique concept और smart editing से बनाया जाता है ताकि आपका business online grow करे और लोगों का ध्यान खींचे। अगर आप भी अपने business, brand या service के लिए reel बनवाना चाहते हैं — तो आज ही contact करें!",
     }
   },
 
