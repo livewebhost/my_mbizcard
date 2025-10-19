@@ -58,8 +58,9 @@ const database = {
   ],
 
   contact: {
-    phone: "+1 234 567 890",
-    email: "contact@henryfitness.com",
-    address: "123 Fitness Street, New York, USA"
+    phone: "7024881776",
+    email: "indorepromo1@gmail.com",
+    address: "434, Premium Paradice, Indore, Madhya Pradesh 453555",
+    gmap: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.1366775043975!2d75.86041829999999!3d22.797398899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3963031aa3c1496f%3A0x7a3cb16b0d8d8510!2sBiz%20com%20network!5e0!3m2!1sen!2sin!4v1760865779869!5m2!1sen!2sin"
   }
 };
