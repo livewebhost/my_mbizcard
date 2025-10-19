@@ -713,19 +713,21 @@
 	<script src="assets/js/cursor.js"></script>
 	<script src="assets/js/custom.js"></script>
 	<script>
-	  document.addEventListener("DOMContentLoaded", () => {
-	    // CSS files
-	    document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
-	      link.href = link.href + '?v=' + Date.now();
-	    });
+    // Add ?v=timestamp to all CSS and JS before loading them
+    document.addEventListener("DOMContentLoaded", () => {
+      // CSS
+      document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
+        link.href = link.href + '?v=' + Date.now();
+      });
+    });
 
-	    // JS files
-	    document.querySelectorAll('script[src]').forEach(script => {
-	      if (script.innerHTML.includes('Date.now')) return;
-
-	      script.src = script.src + '?v=' + Date.now();
-	    });
-	  });
-	</script>
+    // JS (run immediately, before loading external scripts)
+    window.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('script[src]').forEach(s => {
+        if (s.hasAttribute('data-no-bust')) return; // Skip this one
+        s.src = s.src + '?v=' + Date.now();
+      });
+    });
+  </script>
 </body>
 </html>
