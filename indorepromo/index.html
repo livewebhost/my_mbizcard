@@ -704,12 +704,35 @@
 		<!--  Share modal end -->
 	</div>
 	<script src="assets/js/jquery.min.js"></script>
-	<script src="database/db.js"></script>
-	<script src="database/main.js"></script>
-	<script src="assets/js/slick.min.js"></script>
-	<script src="assets/js/bootstrap.bundle.min.js"></script>
-	<script src="assets/js/cursor.js"></script>
-	<script src="assets/js/custom.js"></script>
+	<script>
+	  const jsFiles = [
+	    "assets/js/slick.min.js",
+	    "assets/js/bootstrap.bundle.min.js",
+	    "assets/js/cursor.js",
+	    "assets/js/custom.js"
+	  ];
+
+	  jsFiles.forEach(file => {
+	    const s = document.createElement("script");
+	    s.src = file + "?v=" + Date.now();
+	    document.body.appendChild(s);
+	  });
+	</script>
+	<script>
+	  // Load db.js first
+	  const dbScript = document.createElement("script");
+	  dbScript.src = "database/db.js?v=" + Date.now();
+	  dbScript.onload = () => {
+	    console.log("✅ db.js loaded");
+
+	    // Load main.js only after db.js
+	    const mainScript = document.createElement("script");
+	    mainScript.src = "database/main.js?v=" + Date.now();
+	    mainScript.onload = () => console.log("✅ main.js loaded");
+	    document.body.appendChild(mainScript);
+	  };
+	  document.body.appendChild(dbScript);
+	</script>
 	<script>
     // Add ?v=timestamp to all CSS and JS before loading them
     document.addEventListener("DOMContentLoaded", () => {

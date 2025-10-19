@@ -1,5 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-
   // Page Title
   document.title = database.site.title;
 
@@ -9,5 +7,3 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("about-us-short").textContent = database.profile.about.aboutusshort;
   document.getElementById("profile-image").src = database.profile.about.profileimage;
   document.getElementById("cover-image").src = database.profile.about.coverimage;
-
-});
