@@ -706,8 +706,13 @@
 		<!--  Share modal end -->
 	</div>
 	<script src="assets/js/jquery.min.js"></script>
-	<script src="database/db.js"></script>
-	<script src="database/main.js"></script>
+	<script>
+    const script = document.createElement("script");
+    script.src = "database/db.js?v=" + Date.now();
+    document.head.appendChild(script);
+    script.src = "database/main.js?v=" + Date.now();
+    document.head.appendChild(script);
+    </script>
 	<script src="assets/js/slick.min.js"></script>
 	<script src="assets/js/bootstrap.bundle.min.js"></script>
 	<script src="assets/js/cursor.js"></script>
@@ -718,14 +723,6 @@
       // CSS
       document.querySelectorAll('link[rel="stylesheet"]').forEach(link => {
         link.href = link.href + '?v=' + Date.now();
-      });
-    });
-
-    // JS (run immediately, before loading external scripts)
-    window.addEventListener('DOMContentLoaded', () => {
-      document.querySelectorAll('script[src]').forEach(s => {
-        if (s.hasAttribute('data-no-bust')) return; // Skip this one
-        s.src = s.src + '?v=' + Date.now();
       });
     });
   </script>
