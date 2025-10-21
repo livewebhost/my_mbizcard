@@ -9,6 +9,7 @@ const database = {
     name: "Manisha Raikwar",
     title: "Instagram Content Creator",
     about: {
+      profilelink: "https://www.instagram.com/indorepromo",
       profileimage: "img/profile_pic.jpg",
       coverimage: "img/cover.png",
       aboutusshort: "I’m a content creator who makes engaging Instagram reels for business promotions, products, and services.",
