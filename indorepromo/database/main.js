@@ -20,4 +20,4 @@
   document.getElementById("contactmobile1").textContent = database.contact.phone;
   document.getElementById("contactmobilehref1").href = "mailto:"+database.contact.phone;
 
-  document.getElementById("instagram-profile-link").href = database.profile.profilelink;
+  document.getElementById("instagram-profile-link").href = database.profile.about.profilelink;
